@@ -28,7 +28,6 @@ class Task1(QWidget):
         values[3 - min_index - max_index] = values[max_index] - values[min_index]
         self.line_edit.setText(" ".join(map(str, values)))
 
-
 class Task2(QWidget):
     def __init__(self):
         super(Task2, self).__init__()
@@ -307,7 +306,6 @@ class Task6(QWidget):
 
         self.src.setPlainText(" ".join(map(str, values)))
         self.dst.setPlainText(" ".join(result))
-
 
 class MainWidget(QWidget):
     def __init__(self):
