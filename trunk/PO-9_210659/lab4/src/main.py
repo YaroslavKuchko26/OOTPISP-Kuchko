@@ -41,6 +41,7 @@ class MainWindow(QMainWindow):
     def on_pushButton_clicked(self):
         self.generate()
 
+
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = MainWindow()
