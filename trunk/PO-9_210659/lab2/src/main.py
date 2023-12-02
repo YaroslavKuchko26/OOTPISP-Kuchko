@@ -1,9 +1,9 @@
 from PyQt5.QtWidgets import QMainWindow, QApplication, QMessageBox, QFontDialog, QFileDialog
 from PyQt5.QtGui import QTextStream, QFont
 from PyQt5.QtCore import QDir, QSettings, Qt, QFile, QIODevice, QCloseEvent
-from PyQt5.uic import loadUi  
-
+from PyQt5.uic import loadUi
 class TextEditor(QMainWindow):
+
     def __init__(self, filename="", parent=None):
         super(TextEditor, self).__init__(parent)
         loadUi("texteditor.ui", self)  # Загрузка UI файла
@@ -124,10 +124,10 @@ class TextEditor(QMainWindow):
             return False
 
         out_stream = QTextStream(file)
-        out_stream << self.textEdit.toPlainText()
+        out_stream.write(self.textEdit.toPlainText())
         file.close()
         self.setWindowModified(False)
-        return True
+
 
 
 if __name__ == "__main__":
