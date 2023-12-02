@@ -1,5 +1,8 @@
 from PyQt5.QtCore import QCoreApplication, QMetaObject
-from PyQt5.QtWidgets import QApplication, QMainWindow, QTableView, QComboBox, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton, QWidget, QTimeEdit, QAbstractItemView
+from PyQt5.QtWidgets import (
+    QApplication, QMainWindow, QTableView, QComboBox, QVBoxLayout, QHBoxLayout,
+    QLabel, QLineEdit, QPushButton, QWidget, QTimeEdit, QAbstractItemView
+)
 from PyQt5.QtSql import QSqlDatabase, QSqlQueryModel, QSqlTableModel, QSqlQuery
 
 
@@ -31,7 +34,7 @@ class DatabaseWindow(QMainWindow):
             query_text = (
                 "SELECT machine.nom as 'number', states.state1, states.state2, states.state3, states.state4, states.state5, "
                 "reys.t_out, reys.t_in, reys.t_all "
-                "FROM machine "
+                "FROM machine"
                 "INNER JOIN states ON machine.id = states.id "
                 "INNER JOIN reys ON machine.nom = reys.id "
                 f"WHERE {' and '.join(result)};"
@@ -225,6 +228,6 @@ class Ui_DatabaseWindow(object):
 if __name__ == "__main__":
     import sys
     app = QApplication(sys.argv)
-    mainWindow = DatabaseWindow()
-    mainWindow.show()
+    main_window = DatabaseWindow()
+    main_window.show()
     sys.exit(app.exec_())
