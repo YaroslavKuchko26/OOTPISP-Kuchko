@@ -1,5 +1,9 @@
 import sys
-from PyQt5.QtWidgets import QTableWidgetItem, QApplication, QWidget, QVBoxLayout, QLineEdit, QPushButton, QLabel, QComboBox, QTableWidget, QHBoxLayout, QRadioButton, QButtonGroup, QFileDialog, QPlainTextEdit, QSplitter, QMessageBox
+from PyQt5.QtWidgets import (
+    QTableWidgetItem, QApplication, QWidget, QVBoxLayout, QLineEdit, QPushButton, QLabel,
+    QComboBox, QTableWidget, QHBoxLayout, QRadioButton, QButtonGroup, QFileDialog,
+    QPlainTextEdit, QSplitter, QMessageBox
+)
 from PyQt5.QtCore import Qt, QDir
 import random
 
@@ -21,10 +25,6 @@ class Task1(QWidget):
         values = list(map(int, self.line_edit.text().split()))
         min_index = values.index(min(values))
         max_index = values.index(max(values))
-
-        MAX = max(values)
-        MIN = min(values)
-
         values[3 - min_index - max_index] = values[max_index] - values[min_index]
         self.line_edit.setText(" ".join(map(str, values)))
 
@@ -137,6 +137,8 @@ class Task3(QWidget):
             self.list1.setText(" ".join(self.list_values[1]))
 
 class Task4(QWidget):
+    st = []  
+
     def __init__(self):
         super(Task4, self).__init__()
 
@@ -177,9 +179,10 @@ class Task4(QWidget):
     def generate_stack(self):
         self.st.clear()
         self.st2.clear()
-        for i in range(10):
+        for _ in range(10):
             random_number = random.randint(0, 99)
             self.st.push(str(random_number))
+
         self.stack_values[0].setText(" ".join(self.st))
 
         for elem in self.st:
@@ -254,7 +257,6 @@ class Task5(QWidget):
             self.products[index].append(product)
 
         all_products, at_least_products, no_one_products = [], [], []
-        products_size = len(self.products[3])
         for curr_product in self.products[3]:
             count = sum(curr_product in self.products[j] for j in range(3))
             if count == 0:
