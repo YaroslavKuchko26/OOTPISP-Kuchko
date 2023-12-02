@@ -1,7 +1,6 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidget, QTableWidgetItem, Qt
 from PyQt5 import uic
-from PyQt5.QtCore import QModelIndex
 import random
 
 
@@ -45,5 +44,4 @@ class MainWindow(QMainWindow):
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = MainWindow()
-    window.show()
-    sys.exit(app.exec_())
+
