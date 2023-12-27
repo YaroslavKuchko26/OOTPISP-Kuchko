@@ -24,8 +24,8 @@
 |1|Аксютик Демьян|||||||||||||
 |2|Бердникова Вероника|[Veroniiika](https://github.com/Veroniiika)|[210651](./trunk//PO-9_210651)|✅|✅|||✅|✅||✅|✅|
 |3|Василюк Виктор|||||||||||||
-|5|Зейденс Никита |[NiKiTjAOFF](https://github.com/NIKITJAOFF)|[210654](./trunk/PO-9_210654/)||||||||:white_check_mark:|||
 |4|Дарашкевич Дмитрий |[DarashkevichDmitriy](https://github.com/DarashkevichDmitriy)|[210653](./trunk/PO-9_210653/)|:white_check_mark:|:x:|:x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:white_check_mark:|:x:|
+|5|Зейденс Никита |[NiKiTjAOFF](https://github.com/NIKITJAOFF)|[210654](./trunk/PO-9_210654/)||||||||:white_check_mark:|||
 |6|Зеленков Константин |[Pandus](https://github.com/Pandusss)|[210655](./trunk/PO-9_210655/)|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|
 |7|Качаловский Данил |[dkachalovskiy](https://github.com/dkachalovskiy)|[210656](./trunk/PO-9_210656/)|✅|✅|✅|✅|✅|✅|✅|✅|✅|
 |8|Кот Анастасия |[peppemintu](https://github.com/peppemintu)|[210657](./trunk//PO-9_210657)|✅|✅|||||✅|✅|✅||
